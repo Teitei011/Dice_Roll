@@ -17,6 +17,11 @@ const Wrapper = styled.div`
     grid-template-columns: auto auto;
     justify-items: center;
     align-items: center;
+
+
+    @media (min-width: 992px){
+        grid-template-rows: auto auto;
+    }
   }
 `;
 
