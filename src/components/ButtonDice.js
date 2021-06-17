@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { useDicesContext } from "../tools/context";
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,10 +18,16 @@ const Wrapper = styled.div`
 `;
 
 const ButtonDice = ({ image, text }) => {
+  const { setRollDice } = useDicesContext();
   return (
     <Wrapper className="page">
       <div className="container">
-          <img className="img" src={image} alt={text} onClick={() => console.log(text)} />
+        <img
+          className="img"
+          src={image}
+          alt={text}
+          onClick={() => setRollDice(Number(text))}
+        />
       </div>
     </Wrapper>
   );

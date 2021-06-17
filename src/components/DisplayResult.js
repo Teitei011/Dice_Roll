@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { useDicesContext } from "../tools/context";
 
 const Wrapper = styled.div`
   display: flex;
@@ -8,9 +9,10 @@ const Wrapper = styled.div`
 `;
 
 const Display = ({ value }) => {
+  const { displayValue } = useDicesContext();
   return (
     <Wrapper>
-      <h1>{value}</h1>
+      <h1>{displayValue}</h1>
     </Wrapper>
   );
 };

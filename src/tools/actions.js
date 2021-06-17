@@ -1,0 +1,4 @@
+export const SET_ADVANTAGE = "SET_ADVANTAGE";
+export const SET_DISAVANTAGE = "SET_DISAVANTAGE";
+export const ROLL_DICE = "ROLL_DICE";
+export const RESET_ADVANTAGES = "RESET_ADVANTAGES";
