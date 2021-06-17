@@ -15,7 +15,6 @@ const Wrapper = styled.div`
   .dicesPosition {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-between;
     justify-items: center;
     align-items: center;
   }

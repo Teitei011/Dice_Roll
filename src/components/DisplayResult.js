@@ -6,6 +6,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+    h1{
+        color: white;
+    }
 `;
 
 const Display = ({ value }) => {

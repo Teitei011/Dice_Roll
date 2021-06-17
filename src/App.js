@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: auto;
-  background: gray;
+  background: black;
 `;
 
 function App() {

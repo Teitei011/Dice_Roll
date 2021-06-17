@@ -6,7 +6,7 @@ import {
 } from "./actions";
 
 const randomNumber = (number) => {
-  let random = Number(Math.floor(Math.random() * number));
+  let random = Number(Math.floor(Math.random() * (number + 1)));
   return random;
 };
 
@@ -16,7 +16,6 @@ const dice_reducer = (state, action) => {
   }
 
   if (action.type === SET_DISAVANTAGE) {
-
     return { ...state, advantage: false, disavantage: true };
   }
 
