@@ -6,7 +6,7 @@ import {
 } from "./actions";
 
 const randomNumber = (number) => {
-  let random = Number(Math.floor(Math.random() * (number + 1)));
+  let random = Number(Math.ceil(Math.random() * (number)));
   return random;
 };
 
