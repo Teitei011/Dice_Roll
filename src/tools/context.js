@@ -19,15 +19,17 @@ export const DicesProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const setAdvantage = () => {
+    console.log("Passou por aqui");
     dispatch({ type: SET_ADVANTAGE });
   };
 
   const setDisavantage = () => {
+    console.log("Passou por aqui");
     dispatch({ type: SET_DISAVANTAGE });
   };
 
   const setRollDice = (value) => {
-    console.log(`Payload: ${value}`)
+    console.log(`Payload: ${value}`);
     dispatch({ type: ROLL_DICE, payload: value });
   };
 
@@ -44,7 +46,6 @@ export const DicesProvider = ({ children }) => {
   );
 };
 
-
-export const useDicesContext = () =>{
-    return useContext(DicesContext)
-}
+export const useDicesContext = () => {
+  return useContext(DicesContext);
+};

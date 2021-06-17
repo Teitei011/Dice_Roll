@@ -7,20 +7,17 @@ import {
 
 const randomNumber = (number) => {
   let random = Number(Math.floor(Math.random() * number));
-  console.log(`Random Number: ${random}`);
   return random;
 };
 
 const dice_reducer = (state, action) => {
   if (action.type === SET_ADVANTAGE) {
-    console.log("ADVANTAGE");
-    return { ...action, advantage: true, disavantage: false };
+    return { ...state, advantage: true, disavantage: false };
   }
 
   if (action.type === SET_DISAVANTAGE) {
-    console.log("DISAVANTAGE");
 
-    return { ...action, advantage: false, disavantage: true };
+    return { ...state, advantage: false, disavantage: true };
   }
 
   if (action.type === ROLL_DICE) {

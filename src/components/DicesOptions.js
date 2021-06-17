@@ -17,8 +17,8 @@ const Options = () => {
   const { setDisavantage, setAdvantage } = useDicesContext();
   return (
     <Wrapper>
-      <button className="btn" onClick={() => setAdvantage}>Advantage</button>
-      <button className="btn" onClick={() => setDisavantage}>Disadvantage</button>
+      <button className="btn" onClick={() => setAdvantage()}>Advantage</button>
+      <button className="btn" onClick={() => setDisavantage()}>Disadvantage</button>
     </Wrapper>
   );
 };
